@@ -1,0 +1,87 @@
+<!------ HTML Document - JavaScript - Colliding Liquid Particles ------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML - JavaScript - Colliding Liquid Particles</title>
+  <!-- Meta Data Tags -->
+    <meta charset="UTF-8"><!-- Unicode Character Encoding -->
+    <meta name="description" content="JavaScript - Colliding Liquid Particles">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Pierson Lippard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsive Viewport Background Tag -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head><!-- HTML head end -->
+  <body>
+    <!--  
+    <h1 id="title1">Colliding Liquid Particles<br>JavaScript</h1>
+      -->
+    <canvas id="canvas1"></canvas><!-- canvas canvas1 end -->
+    <div class="container">
+        <div class="content">
+            <nav>
+                <button>HOME</button>
+                <button>PROJECTS</button>
+                <button>CONTACT</button>
+                <button>ABOUT</button>
+                <button>HIRE ME</button>
+            </nav><!-- nav end -->
+            <section class="mainBlock">
+                <div>
+                  <h1>Colliding Liquid Particles<br>JavaScript</h1>
+                </div>
+                <section class="topBlock">
+                    <div> Never put passion in front of principle, even if you win, you’ll lose. 
+                    </div>
+                </section><!-- section topBlock end -->
+                <section class="bottomBlock">
+                    <div> <br>
+                        If the root is strong, the tree will survive.<br>
+                        Trust the quality of what you know, not the quantity.<br> 
+                        To make honey, young bee need young flower, not old prune.
+                    </div>
+                </section><!-- section bottomBlock end -->
+            </section><!-- section mainBlock end -->
+        </div><!-- div content end -->
+    </div><!-- div container end -->
+
+    <svg>
+      <defs>
+        <filter id='goo'>
+          <feGaussianBlur in='SourceGraphic'
+          stdDeviation='10' result='blur'/>
+          <feColorMatrix in='blur' mode='matrix'
+          values='1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 19 -9' result='goo'/>
+          <feComposite in='SourceGraphic' in2='goo' operator='atop'/>
+        </filter>
+      </defs>
+    </svg>
+
+    <script src="script.js"></script><!-- JavaScript end -->
+
+  </body><!-- HTML body end -->
+</html>
+
+<!-- Miyaji San Quotes --
+                      <p>It’s OK to lose to opponent, must not lose to fear. </p>
+
+                     <p>For man with no forgiveness in heart, living even worse punishment than death.<br>
+                      Never put passion in front of principle, even if you win, you’ll lose.<br>
+                      Just remember, license never replace eye, ear, and brain.<br>
+                      The answer is only important if you ask the right question.</p>
+
+                      <p> <br>
+                        If the root is strong, the tree will survive.<br>
+                        Trust the quality of what you know, not the quantity.<br> 
+                        To make honey, young bee need young flower, not old prune.</p>
+  
+  -- end -->
